@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="fr.visufo.titouan.tripodoverlay">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <application
@@ -19,6 +22,11 @@
         </activity>
         <service
             android:name=".JoystickService"
-            android:exported="false" />    </application>
+            android:exported="false" />
+        <receiver
+            android:name=".StopJoystickService"
+            android:enabled="true"
+            android:process=":remote" />
+    </application>
 
 </manifest>

@@ -34,4 +34,6 @@ repositories {
 
 dependencies {
     implementation 'com.github.recruit-lifestyle:FloatingView:2.4.0'
+    implementation 'io.github.controlwear:virtualjoystick:1.10.1'
+    implementation "com.android.support:support-compat:28.0.0"
 }
