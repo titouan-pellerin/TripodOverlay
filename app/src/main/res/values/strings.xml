@@ -3,4 +3,6 @@
     <string name="button">TEST</string>
     <string name="channel_name">Channel</string>
     <string name="channel_description">Test</string>
+    <string name="lancer_le_joystick">Lancer le joystick</string>
+    <string name="connecter_au_tr_pied">Connecter au trépied</string>
 </resources>

@@ -12,7 +12,7 @@ public class StopJoystickService extends BroadcastReceiver {
         Intent service = new Intent(context, JoystickService.class);
         context.stopService(service);
 
-        MainActivity mActivity = new MainActivity();
+        JoystickActivity mActivity = new JoystickActivity();
         mActivity.killApp();
 
 
