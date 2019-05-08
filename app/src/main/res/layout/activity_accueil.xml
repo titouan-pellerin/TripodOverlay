@@ -22,211 +22,197 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="340dp"
-                    android:layout_centerInParent="true"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp">
+                    android:layout_height="320dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="center">
+
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:src="@drawable/header2"
                         android:scaleType="fitCenter"
-                        android:layout_marginTop="-20dp"/>
+                        android:layout_marginTop="0dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="center"/>
 
-                </RelativeLayout>
-                <RelativeLayout
+                </LinearLayout>
+                <LinearLayout
+
                     android:clickable="true"
                     android:focusable="true"
-                    android:id="@+id/button1"
+                    android:id="@+id/bluetooth"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_centerVertical="true"
-                    android:background="@drawable/ripple"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="-10dp"
-                    android:layout_marginBottom="15dp">
-
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
                     <LinearLayout
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_centerVertical="true"
-                        android:background="@drawable/logo_shape">
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ripple">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_centerVertical="true"
-                            android:layout_centerHorizontal="true"
-                            android:src="@drawable/bluetooth"/>
-                    </LinearLayout>
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:src="@drawable/bluetooth"
+                            android:layout_marginLeft="8dp"
+                            android:layout_gravity="center"/>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_centerHorizontal="true"
-                        android:orientation="vertical">
-
-                        <fr.visufo.titouan.tripodoverlay.UnderlinedTextView
-                            android:layout_width="match_parent"
+                        <LinearLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="80dp"
-                            android:layout_marginTop="10dp"
-                            android:gravity="left"
-                            android:text="Étape 1:"
-                            android:textSize="25dp"
-                            android:fontFamily="@font/raleway_light"
-                            android:textColor="#000000"
-                            app:underlineColor="#ea7550"
-                            app:underlineWidth="10px"/>
-                    </LinearLayout>
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="80dp"
-                            android:layout_marginTop="45dp"
-                            android:textSize="15dp"
-                            android:textColor="#000000"
-                            android:text="Activer le bluetooth"
-                            android:fontFamily="@font/raleway_light"/>
+                            <fr.visufo.titouan.tripodoverlay.UnderlinedTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="left"
+                                android:text="Étape 1:"
+                                android:textSize="25dp"
+                                android:fontFamily="@font/raleway_light"
+                                android:textColor="#000000"
+                                app:underlineColor="#ea7550"
+                                app:underlineWidth="10px"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textSize="16sp"
+                                android:layout_marginTop="3dp"
+                                android:textColor="#000000"
+                                android:text="Activer le bluetooth  "
+                                android:fontFamily="@font/raleway_light"/>
+
+
+                        </LinearLayout>
                     </LinearLayout>
-                </RelativeLayout>
-                <RelativeLayout
+                </LinearLayout>
+                <LinearLayout
+
                     android:clickable="true"
                     android:focusable="true"
-                    android:id="@+id/button2"
+                    android:id="@+id/wifi"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_centerVertical="true"
-                    android:background="@drawable/ripple"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="15dp">
-
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
                     <LinearLayout
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_centerVertical="true"
-                        android:background="@drawable/logo_shape">
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ripple">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_centerVertical="true"
-                            android:layout_centerHorizontal="true"
-                            android:src="@drawable/wifi"/>
-                    </LinearLayout>
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:src="@drawable/wifi"
+                            android:layout_marginLeft="8dp"
+                            android:layout_gravity="center"/>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_centerHorizontal="true"
-                        android:orientation="vertical">
-
-                        <fr.visufo.titouan.tripodoverlay.UnderlinedTextView
-                            android:layout_width="match_parent"
+                        <LinearLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="80dp"
-                            android:layout_marginTop="10dp"
-                            android:gravity="left"
-                            android:text="Étape 2:"
-                            android:textSize="25dp"
-                            android:fontFamily="@font/raleway_light"
-                            android:textColor="#000000"
-                            app:underlineColor="#ea7550"
-                            app:underlineWidth="10px"/>
-                    </LinearLayout>
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="80dp"
-                            android:layout_marginTop="45dp"
-                            android:textSize="15dp"
-                            android:textColor="#000000"
-                            android:text="Connection à l'appareil photo"
-                            android:fontFamily="@font/raleway_light"/>
+                            <fr.visufo.titouan.tripodoverlay.UnderlinedTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="left"
+                                android:text="Étape 2:"
+                                android:textSize="25dp"
+                                android:fontFamily="@font/raleway_light"
+                                android:textColor="#000000"
+                                app:underlineColor="#ea7550"
+                                app:underlineWidth="10px"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textSize="16sp"
+                                android:layout_marginTop="3dp"
+                                android:textColor="#000000"
+                                android:text="Connection à l'appareil photo  "
+                                android:fontFamily="@font/raleway_light"/>
+
+
+                        </LinearLayout>
                     </LinearLayout>
-                </RelativeLayout>
-                <RelativeLayout
+                </LinearLayout>
+                <LinearLayout
+
                     android:clickable="true"
                     android:focusable="true"
-                    android:id="@+id/button3"
+                    android:id="@+id/joystick"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_centerVertical="true"
-                    android:background="@drawable/ripple"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="15dp">
-
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
                     <LinearLayout
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_centerVertical="true"
-                        android:background="@drawable/logo_shape">
+                        android:id="@+id/plante1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ripple">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_centerVertical="true"
-                            android:layout_centerHorizontal="true"
-                            android:src="@drawable/joystick"/>
-                    </LinearLayout>
+                            android:id="@+id/image"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:src="@drawable/joystick"
+                            android:layout_marginLeft="8dp"
+                            android:layout_gravity="center"/>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_centerHorizontal="true"
-                        android:orientation="vertical">
-
-                        <fr.visufo.titouan.tripodoverlay.UnderlinedTextView
-                            android:layout_width="match_parent"
+                        <LinearLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="80dp"
-                            android:layout_marginTop="10dp"
-                            android:gravity="left"
-                            android:text="Étape 3:"
-                            android:textSize="25dp"
-                            android:fontFamily="@font/raleway_light"
-                            android:textColor="#000000"
-                            app:underlineColor="#ea7550"
-                            app:underlineWidth="10px"/>
-                    </LinearLayout>
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="80dp"
-                            android:layout_marginTop="45dp"
-                            android:textSize="15dp"
-                            android:textColor="#000000"
-                            android:text="Lancer le joystick"
-                            android:fontFamily="@font/raleway_light"/>
+                            <fr.visufo.titouan.tripodoverlay.UnderlinedTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="left"
+                                android:text="Étape 3:"
+                                android:textSize="25dp"
+                                android:fontFamily="@font/raleway_light"
+                                android:textColor="#000000"
+                                app:underlineColor="#ea7550"
+                                app:underlineWidth="10px"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textSize="16sp"
+                                android:layout_marginTop="3dp"
+                                android:textColor="#000000"
+                                android:text="Lancer le joystick  "
+                                android:fontFamily="@font/raleway_light"/>
+
+
+                        </LinearLayout>
                     </LinearLayout>
-                </RelativeLayout>
+                </LinearLayout>
+
             </LinearLayout>
         </ScrollView>
     </RelativeLayout>

@@ -48,10 +48,10 @@ public class JoystickActivity extends AppCompatActivity {
         Intent svc = new Intent(this, JoystickService.class);
 
         startService(svc);
-        Intent launchIntent = getPackageManager().getLaunchIntentForPackage("info.qdd");
+        /*Intent launchIntent = getPackageManager().getLaunchIntentForPackage("info.qdd");
         if (launchIntent != null) {
             startActivity(launchIntent);
-        }
+        }*/
         finish();
     }
     private void shutMainService() {

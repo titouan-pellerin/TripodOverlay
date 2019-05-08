@@ -19,7 +19,7 @@
 
     <size
         android:width="300dp"
-        android:height="82dp" />
+        android:height="90dp" />
     <!--Use android:dashWidth="2dp" and android:dashGap="2dp"
     to add dashes to your stroke-->
 

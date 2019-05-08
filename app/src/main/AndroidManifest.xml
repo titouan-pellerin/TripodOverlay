@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="fr.visufo.titouan.tripodoverlay">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
@@ -31,10 +32,6 @@
             android:name=".Accueil"
             android:screenOrientation="portrait">
         </activity>
-        <activity
-            android:name=".WifiOverlay"
-            android:theme="@style/Theme.AppCompat.Dialog" />
-
         <service
             android:name=".JoystickService"
             android:exported="false" />
