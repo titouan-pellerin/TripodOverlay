@@ -85,10 +85,10 @@ public class JoystickService extends Service implements View.OnTouchListener {
         joystick.setOnMoveListener(new JoystickView.OnMoveListener() {
             @Override
             public void onMove(int angle, int strength) {
-                if (strength > 15 && angle >= 0 && angle <= 180) {
+                if (strength > 15 && angle >= 270 && angle <= 450) {
                     sendSignal(1);
                     Log.v(TAG, "1");
-                }else if(strength > 15 && angle>180 && angle<=360){
+                }else if(strength > 15 && angle>90 && angle<=270){
                     sendSignal(2);
                 }/* else if (strength > 15 && angle > 270 && angle <= 90) {
                     sendSignal(3);
