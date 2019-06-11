@@ -44,24 +44,6 @@ public class UnderlinedTextView extends AppCompatTextView {
         mPaint.setStrokeWidth(mStrokeWidth);
     }
 
-    public int getUnderLineColor() {
-        return mPaint.getColor();
-    }
-
-    public void setUnderLineColor(int mColor) {
-        mPaint.setColor(mColor);
-        invalidate();
-    }
-
-    public float getUnderlineWidth() {
-        return mStrokeWidth;
-    }
-
-    public void setUnderlineWidth(float mStrokeWidth) {
-        this.mStrokeWidth = mStrokeWidth;
-        invalidate();
-    }
-
     @Override
     protected void onDraw(Canvas canvas) {
 
@@ -80,7 +62,7 @@ public class UnderlinedTextView extends AppCompatTextView {
             x_diff = layout.getPrimaryHorizontal(firstCharInLine + 1) - x_start;
             x_stop = layout.getPrimaryHorizontal(lastCharInLine - 1) + x_diff;
 
-            canvas.drawLine(x_start, baseline+10 + mStrokeWidth, x_stop-50, baseline+10 + mStrokeWidth, mPaint);
+            canvas.drawLine(x_start, baseline + +mStrokeWidth, x_stop, baseline + mStrokeWidth, mPaint);
         }
 
         super.onDraw(canvas);

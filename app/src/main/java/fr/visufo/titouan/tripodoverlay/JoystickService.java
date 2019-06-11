@@ -30,7 +30,6 @@ import io.github.controlwear.virtual.joystick.android.JoystickView;
 public class JoystickService extends Service implements View.OnTouchListener {
 
     String address = "98:D3:31:20:9B:30";
-    private ProgressDialog progress;
     BluetoothAdapter myBluetooth = null;
     BluetoothSocket btSocket = null;
     private boolean isBtConnected = false;
@@ -72,7 +71,6 @@ public class JoystickService extends Service implements View.OnTouchListener {
                     if (event.getKeyCode() == KeyEvent.KEYCODE_BACK) {
                         Log.v(TAG, "Appui sur le bouton retour");
                         onDestroy();
-                        // As we've taken action, we'll return true to prevent other apps from consuming the event as well
                        return true;
                     }
                 }
@@ -88,21 +86,13 @@ public class JoystickService extends Service implements View.OnTouchListener {
                 if (strength > 15 && angle >= 270 && angle <= 450) {
                     sendSignal(1);
                     Log.v(TAG, "1");
-                }else if(strength > 15 && angle>90 && angle<=270){
+                }else if(strength > 15 && angle>90 && angle<=270) {
                     sendSignal(2);
-                }/* else if (strength > 15 && angle > 270 && angle <= 90) {
-                    sendSignal(3);
-                }else if(strength > 15 && angle >90 && angle <=270){
-                    sendSignal(4);
-                    //Log.v(TAG, "" + strength*-1);
-                }*/ else if (strength <=15) {
-                    /*sendSignal(0);
+                    Log.v(TAG, "2");
+                }else if (strength <=15) {
                     sendSignal(0);
-                    sendSignal(0);*/
-                    sendSignal(0);
-                    //Log.v(TAG, "0");
+                    Log.v(TAG, "0");
                 }
-                //Log.v(TAG,"Force: "+strength);
             }
         });
         windowManager.addView(floatyView, params);

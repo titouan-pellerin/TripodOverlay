@@ -45,18 +45,19 @@ public class Accueil extends AppCompatActivity {
         setContentView(R.layout.activity_accueil);
         checkDrawOverlayPermission();
         myBluetooth = BluetoothAdapter.getDefaultAdapter();
-        if(myBluetooth.isEnabled()){
+        if(myBluetooth != null){
+            if(myBluetooth.isEnabled()) {
             bluetoothOn = true;
+            }
         }
-        button1 = (LinearLayout ) findViewById(R.id.bluetooth);
-        button2 = (LinearLayout ) findViewById(R.id.wifi);
-        button3 = (LinearLayout ) findViewById(R.id.joystick);
+        button1 = (LinearLayout) findViewById(R.id.bluetooth);
+        button2 = (LinearLayout) findViewById(R.id.wifi);
+        button3 = (LinearLayout) findViewById(R.id.joystick);
 
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
             if ( myBluetooth==null ) {
                 Toast.makeText(getApplicationContext(), "Le Bluetooth n'est pas disponible sur cet appareil", Toast.LENGTH_SHORT).show();
-                //finish();
             } else if ( !myBluetooth.isEnabled() ) {
                 Intent turnBTon = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
                 startActivityForResult(turnBTon, 1);

@@ -3,6 +3,11 @@
     <string name="button">TEST</string>
     <string name="channel_name">Channel</string>
     <string name="channel_description">Test</string>
-    <string name="lancer_le_joystick">Lancer le joystick</string>
     <string name="connecter_au_tr_pied">Connecter au trépied</string>
+    <string name="tape_1">Étape 1:</string>
+    <string name="activer_le_bluetooth">Activer le bluetooth</string>
+    <string name="tape_2">Étape 2:</string>
+    <string name="connection_l_appareil_photo">Connection à l\'appareil photo</string>
+    <string name="tape_3">Étape 3:</string>
+    <string name="lancer_le_joystick">Lancer le joystick</string>
 </resources>
